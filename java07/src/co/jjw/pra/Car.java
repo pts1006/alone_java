@@ -7,7 +7,15 @@ public class Car {
 	Tire frontRightTire = new Tire("앞오른쪽", 2);
 	Tire backLeftTire = new Tire("뒤왼쪽", 3);
 	Tire backRightTire = new Tire("뒤오른쪽", 4);
-	
+	/* 
+	배열로
+	Tire[] tires = {
+		new Tire("앞왼쪽", 6),
+		new Tire("앞오른쪽", 2),
+		new Tire("뒤왼쪽", 3),
+		new Tire("뒤오른쪽", 4),
+	};
+	 */
 	// 생성자
 	
 	// 메소드
@@ -20,6 +28,15 @@ public class Car {
 		if (backLeftTire.roll() == false) { stop(); return 3; }
 		if (backRightTire.roll() == false) { stop(); return 4; }
 		
+		/* 
+		배열
+		for (int i = 0; i < tires.length; i++) {
+			if (tires[i].roll() == false) {
+				stop();
+				return (i + 1);
+			}
+		}
+ 		*/
 		return 0;
 	}
 	

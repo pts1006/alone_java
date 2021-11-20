@@ -28,7 +28,12 @@ public class CarExample {
 					car.backRightTire = new KumhoTire("뒤오른쪽", 17);
 					break;
 			}
-			
+			/* 
+			if (problemLocation != 0) {
+				System.out.println(car.tires[problemLocation - 1].location + " HankookTire로 교체");
+				car.tires[problemLocation - 1] = new HankookTire(car.tires[problemLocation - 1].location, 15);
+			}
+			 */
 			System.out.println("----------------------------");
 		}
 	}
