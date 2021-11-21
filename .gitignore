@@ -8,3 +8,6 @@ target/
 
 # Log file
 *.log
+
+# ReadMe file
+*.md
