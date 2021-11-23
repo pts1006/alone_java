@@ -10,8 +10,8 @@ public class CarExample {
 
         System.out.println("===================");
 
-        myCar.frontLeftTire = new KumhoTire();
-        myCar.frontRightTire = new KumhoTire();
+        myCar.tires[0] = new KumhoTire();   // myCar.frontLeftTire = new KumhoTire();
+        myCar.tires[1] = new KumhoTire();   // myCar.frontRightTire = new KumhoTire();
 
         myCar.run();
     }
