@@ -13,5 +13,6 @@ public class KeyExample {
         // 식별키 "new Key(1)"로 "홍길동"을 읽어옴
         String value = hashMap.get(new Key(1));
         System.out.println(value);
+        
     }
 }
