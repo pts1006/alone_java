@@ -44,9 +44,10 @@ public class WatchServiceExample extends Application {
 							Platform.runLater(() -> textArea.appendText("파일 생성됨 - > " + path.getFileName() + "\n"));
 						} else if (kind == StandardWatchEventKinds.ENTRY_DELETE) {
 							// 삭제되었을 경우, 실행할 코드
-							
+							Platform.runLater(() -> textArea.appendText("파일 삭제됨 -> " + path.getFileName() + " \n"));
 						} else if (kind == StandardWatchEventKinds.ENTRY_MODIFY) {
 							// 변경되었을 경우, 실행할 코드
+							Platform.runLater(() -> textArea.appendText("파일 변경됨 -> " + path.getFileName() + " \n"));
 						} else if (kind == StandardWatchEventKinds.OVERFLOW) {
 							
 						}
